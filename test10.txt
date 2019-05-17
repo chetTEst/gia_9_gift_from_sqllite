@@ -1,0 +1,16 @@
+
+$CATEGORY: $cat$/top/ОГЭ Информатика/Циклический алгоритм обработки массива чисел, записанный на алгоритмическом языке
+
+[html]<p>В таблице Dat хранятся данные измерений среднесуточной температуры за 10 дней в градусах (Dat[1] - данные за первый день, Dat[2] - за второй и т. д.). Определите, какое число будет напечатано в результате работы следующей программы.</p>
+<table>
+<tbody><tr>
+<td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Алгоритмический язык</b></td>
+<td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>BASIC</b></td>
+</tr>
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>алг<br>нач<br>целтаб Dat[0:9]<br>цел к,m<br>Dat[0]:\= 19<br>Dat[1]:\= 13<br>Dat[2]:\= 14<br>Dat[3]:\= 19<br>Dat[4]:\= 17<br>Dat[5]:\= 16<br>Dat[6]:\= 13<br>Dat[7]:\= 14<br>Dat[8]:\= 17<br>Dat[9]:\= 17<br>m :\= 22<br>нц для к от 0 до 9<br>если Dat[к] &lt; m то<br>m : \=Dat[k]<br>все<br>КЦ<br>вывод m<br>КОН</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>DIM Dat(9)AS INTEGER<br>DIM k,m AS INTEGER<br>Dat(0)\= 19: Dat(1) \=13<br>Dat(2) \= 14: Dat(3) \=19<br>Dat(4) \= 17: Dat(5) \=16<br>Dat(6) \= 13: Dat(7) \=14<br>Dat(8) \= 17: Dat(9) \=17<br>m \= 22<br>FOR k \= 0 TO 9<br>IF Dat(k) &lt; m THEN<br>m \= Dat(k)<br>ENDIF<br>NEXT k<br>PRINT m</pre></td></tr>
+<tr>
+<td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Pascal</b></td>
+<td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Python</b></td>
+</tr>
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Var k, m: integer;<br>Dat: array[0..9] of integer;<br>Begin<br>Dat[0]:\= 19; Dat[1]:\= 13;<br>Dat[2]:\= 14; Dat[3]:\= 19;<br>Dat[4]:\= 17; Dat[5]:\= 16;<br>Dat[6]:\= 13; Dat[7]:\= 14;<br>Dat[8]:\= 17; Dat[9]:\= 17;<br>m :\= 22;<br>for k :\=0 to 9 do<br>if Dat[k] &lt; m then<br>begin<br>m :\= Dat[k];<br>end;<br>writeln(m);<br>End.</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Dat\=[19, 13, 14, 19, 17, 16, 13, 14, 17, 17]<br>m\=22<br>for k in range(10):<br>    if Dat[k] &lt; m<br>        m\=Dat[k]<br>print (m)</pre></td></tr></tbody></table>{=13#Программа предназначена для нахождения минимальной температуры за указаный период. Проанализировав входные данные, приходим к выводу, что ответ 13.}
+

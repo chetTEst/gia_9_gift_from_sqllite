@@ -1,0 +1,16 @@
+
+$CATEGORY: $cat$/top/ОГЭ Информатика/Простейший циклический алгоритм, записанный на алгоритмическом языке
+
+[html]<p>Запишите значение переменной s, полученное в результате работы следующей программы.</p>
+<table>
+<tbody><tr>
+<td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Алгоритмический язык</b></td>
+<td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>BASIC</b></td>
+</tr>
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>алг<br>нач<br>цел s, k<br>s :\= 3<br>нц для k от 7 до 16<br>s :\= s + 4<br>кц<br>вывод s<br>кон</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>DIM k, s AS INTEGER<br>s \= 3<br>    FOR к \= 7 TO 16<br>s \= s + 4<br>    NEXT k<br>    PRINT s<br></pre></td></tr>
+<tr>
+<td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Pascal</b></td>
+<td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Python</b></td>
+</tr>
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Var s,k: integer;<br>    Begin<br>s :\= 3;<br>for k :\= 7 to 16 do<br>s :\= s + 4;<br>writeln(s);<br>    End.</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>s \= 3<br>for k in range(7, 17):<br>    s \= s + 4<br>print s</pre></td></tr></tbody></table>{=43#Цикл со счетчиком выполняется от k :\= 7 до 16. выполняется 10 раз. Каждый раз переменная s увеличивается на 4. Поскольку изначально s \= 3, после выполнения программы получим: s \= 3+10 · 4 \= 43.}
+
