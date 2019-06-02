@@ -16,7 +16,7 @@ def for_count_r(j):
     if config.debug==1:
         return 2
     else:
-        return utils.get_rows_count(j)
+        return utils.get_rows_count(j)+1
 
 
 utils.count_rows() #подсчет строк в таблицах базы данных
@@ -195,8 +195,8 @@ for j in [7,8,11,12,14,15,16,17,18]:
             if utils.debug==1:print(vopros)
             f.write(vopros)
             f.write("\n")
-        if config.one_file==0:
-            f.close()
+    if config.one_file==0:
+        f.close()
 # aлгоритм генерации 9-го задания
 #Устанвока в один файл, или несколько
 j=9
@@ -210,11 +210,11 @@ f.write("$CATEGORY: $cat$/top/ОГЭ Информатика/"+config.category[j-
 f.write("\n")
 f.write("\n")
 for i in range(1,for_count_r(j)):#utils.get_rows_count(j)):
-    row = db_worker.select_single(i,str(j))
-    r=['','','','','','','','','']
-    for r_i in range(1,8):
-            r[r_i]=row[r_i]
     for var in range(config.var9):
+        row = db_worker.select_single(i,str(j))
+        r=['','','','','','','','','']
+        for r_i in range(1,8):
+                r[r_i]=row[r_i]
         cods=['','','','']
         #генерим случайные числа для шаблонов программ
         s=random.randint(1,10)-1
@@ -229,6 +229,7 @@ for i in range(1,for_count_r(j)):#utils.get_rows_count(j)):
             k1=random.randint(4,9)
         for code in range(2,6):
             #сохраняем в переменную текст шаюблона из базы данных
+            result_code=[]
             result_code=r[code]
             #заменяем данные в шаблоне
             result_code=result_code.replace('{s}',str(s))
@@ -294,11 +295,11 @@ f.write("$CATEGORY: $cat$/top/ОГЭ Информатика/"+config.category[j-
 f.write("\n")
 f.write("\n")
 for i in range(1,for_count_r(j)):#utils.get_rows_count(j)):
-    row = db_worker.select_single(i,str(j))
-    r=['','','','','','','','','']
-    for r_i in range(1,8):
-            r[r_i]=row[r_i]
     for var in range(config.var10):
+        row = db_worker.select_single(i,str(j))
+        r=['','','','','','','','','']
+        for r_i in range(1,8):
+                r[r_i]=row[r_i]
         cods=['','','','']
         #генерируем случайные числа для шаблона программы из базы данных
         Dat=[random.randint(10, 20) for i in range(10)]
@@ -306,10 +307,11 @@ for i in range(1,for_count_r(j)):#utils.get_rows_count(j)):
         t=random.randint(10, 20)
         for code in range(2,6):
             #сохраняем в переменную текст шаюблона из базы данных
+            result_code=[]
             result_code=r[code]
             #заменяем данные в шаблоне
-            for i in range(10):
-                result_code=result_code.replace('{dat'+str(int(i))+'}',str(Dat[i]))
+            for n in range(10):
+                result_code=result_code.replace('{dat'+str(int(n))+'}',str(Dat[n]))
             result_code=result_code.replace('{t}',str(t))
             cods[code-2]="<pre>"+result_code+"</pre>"
             cods[code-2]=cods[code-2].replace("~","\\~")

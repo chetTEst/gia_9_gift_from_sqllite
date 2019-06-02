@@ -7,10 +7,10 @@ $CATEGORY: $cat$/top/ОГЭ Информатика/Простейший цикл
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Алгоритмический язык</b></td>
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>BASIC</b></td>
 </tr>
-<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>алг<br>нач<br>цел s, k<br>s :\= 3<br>нц для k от 7 до 16<br>s :\= s + 4<br>кц<br>вывод s<br>кон</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>DIM k, s AS INTEGER<br>s \= 3<br>    FOR к \= 7 TO 16<br>s \= s + 4<br>    NEXT k<br>    PRINT s<br></pre></td></tr>
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>алг<br>нач<br>цел s, k<br>s :\= 6<br>нц для k от 4 до 10<br>s :\= s + 8<br>кц<br>вывод s<br>кон</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>DIM k, s AS INTEGER<br>s \= 6<br>    FOR к \= 4 TO 10<br>s \= s + 8<br>    NEXT k<br>    PRINT s<br></pre></td></tr>
 <tr>
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Pascal</b></td>
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Python</b></td>
 </tr>
-<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Var s,k: integer;<br>    Begin<br>s :\= 3;<br>for k :\= 7 to 16 do<br>s :\= s + 4;<br>writeln(s);<br>    End.</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>s \= 3<br>for k in range(7, 17):<br>    s \= s + 4<br>print s</pre></td></tr></tbody></table>{=43#Цикл со счетчиком выполняется от k :\= 7 до 16. выполняется 10 раз. Каждый раз переменная s увеличивается на 4. Поскольку изначально s \= 3, после выполнения программы получим: s \= 3+10 · 4 \= 43.}
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Var s,k: integer;<br>    Begin<br>s :\= 6;<br>for k :\= 4 to 10 do<br>s :\= s + 8;<br>writeln(s);<br>    End.</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>s \= 6<br>for k in range(4, 11):<br>    s \= s + 8<br>print s</pre></td></tr></tbody></table>{=62#Цикл со счетчиком выполняется от k :\= 4 до 10. выполняется 7 раз. Каждый раз переменная s увеличивается на 8. Поскольку изначально s \= 6, после выполнения программы получим: s \= 6+7 · 8 \= 62.}
 

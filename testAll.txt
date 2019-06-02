@@ -115,12 +115,12 @@ $CATEGORY: $cat$/top/ОГЭ Информатика/Простейший цикл
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Алгоритмический язык</b></td>
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>BASIC</b></td>
 </tr>
-<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>алг<br>нач<br>цел s, k<br>s :\= 2<br>нц для k от 7 до 15<br>s :\= s + 8<br>кц<br>вывод s<br>кон</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>DIM k, s AS INTEGER<br>s \= 2<br>    FOR к \= 7 TO 15<br>s \= s + 8<br>    NEXT k<br>    PRINT s<br></pre></td></tr>
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>алг<br>нач<br>цел s, k<br>s :\= 7<br>нц для k от 4 до 9<br>s :\= s + 8<br>кц<br>вывод s<br>кон</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>DIM k, s AS INTEGER<br>s \= 7<br>    FOR к \= 4 TO 9<br>s \= s + 8<br>    NEXT k<br>    PRINT s<br></pre></td></tr>
 <tr>
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Pascal</b></td>
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Python</b></td>
 </tr>
-<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Var s,k: integer;<br>    Begin<br>s :\= 2;<br>for k :\= 7 to 15 do<br>s :\= s + 8;<br>writeln(s);<br>    End.</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>s \= 2<br>for k in range(7, 16):<br>    s \= s + 8<br>print s</pre></td></tr></tbody></table>{=74#Цикл со счетчиком выполняется от k :\= 7 до 15. выполняется 9 раз. Каждый раз переменная s увеличивается на 8. Поскольку изначально s \= 2, после выполнения программы получим: s \= 2+9 · 8 \= 74.}
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Var s,k: integer;<br>    Begin<br>s :\= 7;<br>for k :\= 4 to 9 do<br>s :\= s + 8;<br>writeln(s);<br>    End.</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>s \= 7<br>for k in range(4, 10):<br>    s \= s + 8<br>print s</pre></td></tr></tbody></table>{=55#Цикл со счетчиком выполняется от k :\= 4 до 9. выполняется 6 раз. Каждый раз переменная s увеличивается на 8. Поскольку изначально s \= 7, после выполнения программы получим: s \= 7+6 · 8 \= 55.}
 
 
 $CATEGORY: $cat$/top/ОГЭ Информатика/Циклический алгоритм обработки массива чисел, записанный на алгоритмическом языке
@@ -131,16 +131,16 @@ $CATEGORY: $cat$/top/ОГЭ Информатика/Циклический алг
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Алгоритмический язык</b></td>
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>BASIC</b></td>
 </tr>
-<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>алг<br>нач<br>целтаб Dat[0:9]<br>цел к,m<br>Dat[0]:\= 20<br>Dat[1]:\= 11<br>Dat[2]:\= 11<br>Dat[3]:\= 15<br>Dat[4]:\= 12<br>Dat[5]:\= 17<br>Dat[6]:\= 11<br>Dat[7]:\= 20<br>Dat[8]:\= 12<br>Dat[9]:\= 12<br>m :\= 22<br>нц для к от 0 до 9<br>если Dat[к] &lt; m то<br>m : \=Dat[k]<br>все<br>КЦ<br>вывод m<br>КОН</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>DIM Dat(9)AS INTEGER<br>DIM k,m AS INTEGER<br>Dat(0)\= 20: Dat(1) \=11<br>Dat(2) \= 11: Dat(3) \=15<br>Dat(4) \= 12: Dat(5) \=17<br>Dat(6) \= 11: Dat(7) \=20<br>Dat(8) \= 12: Dat(9) \=12<br>m \= 22<br>FOR k \= 0 TO 9<br>IF Dat(k) &lt; m THEN<br>m \= Dat(k)<br>ENDIF<br>NEXT k<br>PRINT m</pre></td></tr>
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>алг<br>нач<br>целтаб Dat[0:9]<br>цел к,m<br>Dat[0]:\= 18<br>Dat[1]:\= 13<br>Dat[2]:\= 19<br>Dat[3]:\= 17<br>Dat[4]:\= 10<br>Dat[5]:\= 14<br>Dat[6]:\= 17<br>Dat[7]:\= 12<br>Dat[8]:\= 11<br>Dat[9]:\= 14<br>m :\= 22<br>нц для к от 0 до 9<br>если Dat[к] &lt; m то<br>m : \=Dat[k]<br>все<br>КЦ<br>вывод m<br>КОН</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>DIM Dat(9)AS INTEGER<br>DIM k,m AS INTEGER<br>Dat(0)\= 18: Dat(1) \=13<br>Dat(2) \= 19: Dat(3) \=17<br>Dat(4) \= 10: Dat(5) \=14<br>Dat(6) \= 17: Dat(7) \=12<br>Dat(8) \= 11: Dat(9) \=14<br>m \= 22<br>FOR k \= 0 TO 9<br>IF Dat(k) &lt; m THEN<br>m \= Dat(k)<br>ENDIF<br>NEXT k<br>PRINT m</pre></td></tr>
 <tr>
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Pascal</b></td>
 <td style="text-align: center; border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><b>Python</b></td>
 </tr>
-<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Var k, m: integer;<br>Dat: array[0..9] of integer;<br>Begin<br>Dat[0]:\= 20; Dat[1]:\= 11;<br>Dat[2]:\= 11; Dat[3]:\= 15;<br>Dat[4]:\= 12; Dat[5]:\= 17;<br>Dat[6]:\= 11; Dat[7]:\= 20;<br>Dat[8]:\= 12; Dat[9]:\= 12;<br>m :\= 22;<br>for k :\=0 to 9 do<br>if Dat[k] &lt; m then<br>begin<br>m :\= Dat[k];<br>end;<br>writeln(m);<br>End.</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Dat\=[20, 11, 11, 15, 12, 17, 11, 20, 12, 12]<br>m\=22<br>for k in range(10):<br>    if Dat[k] &lt; m<br>        m\=Dat[k]<br>print (m)</pre></td></tr></tbody></table>{=11#Программа предназначена для нахождения минимальной температуры за указаный период. Проанализировав входные данные, приходим к выводу, что ответ 11.}
+<tr><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Var k, m: integer;<br>Dat: array[0..9] of integer;<br>Begin<br>Dat[0]:\= 18; Dat[1]:\= 13;<br>Dat[2]:\= 19; Dat[3]:\= 17;<br>Dat[4]:\= 10; Dat[5]:\= 14;<br>Dat[6]:\= 17; Dat[7]:\= 12;<br>Dat[8]:\= 11; Dat[9]:\= 14;<br>m :\= 22;<br>for k :\=0 to 9 do<br>if Dat[k] &lt; m then<br>begin<br>m :\= Dat[k];<br>end;<br>writeln(m);<br>End.</pre></td><td style="border-width: 1px; border-style: solid; border-color: rgb(51, 51, 51);"><pre>Dat\=[18, 13, 19, 17, 10, 14, 17, 12, 11, 14]<br>m\=22<br>for k in range(10):<br>    if Dat[k] &lt; m<br>        m\=Dat[k]<br>print (m)</pre></td></tr></tbody></table>{=10#Программа предназначена для нахождения минимальной температуры за указаный период. Проанализировав входные данные, приходим к выводу, что ответ 10.}
 
 
 $CATEGORY: $cat$/top/ОГЭ Информатика/Дискретная форма представления числовой, текстовой, графической и звуковой информации
 
-[html]<p>Переведите двоичное число 11010011 в десятичную систему счисления.</p>{
-=211#Пример решения доступен по ссылке https://youtu.be/uETzw6WP_FM}
+[html]<p>Переведите восьмиричное число 157 в десятичную систему счисления.</p>{
+=111#Пример решения доступен по ссылке https://youtu.be/uETzw6WP_FM}
 
