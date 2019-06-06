@@ -53,6 +53,7 @@ for j in range(1,7):
                 r[r_i]=r[r_i].replace("}","\\}")
                 r[r_i]=r[r_i].replace("\n","<br>")
             vopros='[html]<p>{0}<img src\\="data:image/png;base64,{1}" class="img-responsive atto_image_button_text-bottom"><br>{2}</p>'.format(r[2],data_url,r[3])
+            vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
             vopros=vopros+"{\n"+"="+r[4]+"\n"
             for n in range(3):
                 wrong_answers[n]=wrong_answers[n].replace("~","\\~")
@@ -81,6 +82,7 @@ for j in range(1,7):
                 r[r_i]=r[r_i].replace("}","\\}")
                 r[r_i]=r[r_i].replace("\n","<br>")
             vopros="[html]<p>{0}<br>{1}<br>{2}</p>".format(r[2],r[1],r[3])
+            vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
             vopros=vopros+"{\n"+"="+r[4]+"\n"
             for n in range(3):
                 wrong_answers[n]=wrong_answers[n].replace("~","\\~")
@@ -111,6 +113,7 @@ for j in range(1,7):
             if j==2:
                 r[3]=r[3].replace(": ",":<br>")
             vopros="[html]<p>{0}</p>".format(r[3])
+            vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
             vopros=vopros+"{\n"+"="+r[4]+"\n"
             for n in range(3):
                 wrong_answers[n]=wrong_answers[n].replace("~","\\~")
@@ -166,6 +169,7 @@ for j in [7,8,11,12,14,15,16,17,18]:
             data_url=base64.b64encode(img_f.read()).decode('ascii')
             vopros='[html]<p>{0}<img src\\="data:image/png;base64,{1}" class="img-responsive atto_image_button_text-bottom"><br>{2}</p>'.format(r[2],data_url,r[3])
             img_f.close()
+            vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
             vopros=vopros+"{\n"+"="+r[4]
             vopros=vopros+"#"+r[5]+"}\n"
             if utils.debug==1:print(vopros)
@@ -176,6 +180,7 @@ for j in [7,8,11,12,14,15,16,17,18]:
             data_url=base64.b64encode(img_f.read()).decode('ascii')
             vopros='[html]<p><img src\\="data:image/png;base64,{0}" class="img-responsive atto_image_button_text-bottom"><br>{1}</p>'.format(data_url,r[3])
             img_f.close()
+            vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
             vopros=vopros+"{\n"+"="+r[4]
             vopros=vopros+"#"+r[5]+"}\n"
             if utils.debug==1:print(vopros)
@@ -183,6 +188,7 @@ for j in [7,8,11,12,14,15,16,17,18]:
             f.write("\n")
         elif j==8:
             vopros='[html]<p>{0}<br>{1}<br>{2}</p>'.format(r[2],r[1],r[3])
+            vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
             vopros=vopros+"{\n"+"="+r[4]
             vopros=vopros+"#"+r[5]+"}\n"
             if utils.debug==1:print(vopros)
@@ -190,6 +196,7 @@ for j in [7,8,11,12,14,15,16,17,18]:
             f.write("\n")
         else:
             vopros='[html]<p>{0}</p>'.format(r[3])
+            vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
             vopros=vopros+"{\n"+"="+r[4]
             vopros=vopros+"#"+r[5]+"}\n"
             if utils.debug==1:print(vopros)
@@ -262,6 +269,7 @@ for i in range(1,for_count_r(j)):#utils.get_rows_count(j)):
         vopros+=config.td_s+cods[2]+"</td>"
         vopros+=config.td_s+cods[3]+"</td></tr></tbody></table>"
         vopros="<p>"+r[1]+"</p>"+vopros
+        vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
         result_memorial=row[7]
         #заеняем данные в шаблоне
         result_memorial=result_memorial.replace('{s}',str(s))
@@ -347,6 +355,7 @@ for i in range(1,for_count_r(j)):#utils.get_rows_count(j)):
         vopros+=config.td_s+cods[2]+"</td>"
         vopros+=config.td_s+cods[3]+"</td></tr></tbody></table>"
         vopros="<p>"+r[1]+"</p>"+vopros
+        vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
         vopros="[html]"+vopros+"{="+str(utils.generate_right_answer_10(row[6],Dat,t))+"#"+result_memorial+"}\n"
         if utils.debug==1:print(vopros)
         f.write(vopros)
@@ -378,6 +387,7 @@ for i in range(config.var13):
     text_mesaage='Переведите '+base_text1[base1]+' число '+utils.convert_base(chislo,base_number[base1],10)+' в '+base_text2[base2]+' систему счисления.'
     ra=utils.convert_base(chislo,base_number[base2],10)
     vopros='[html]<p>{0}</p>'.format(text_mesaage)
+    vopros+='<p style="text-align: right;"><sub><span class="" style="color: rgb(170, 170, 170);">При поддержке учителей <a href="https://sch2107.mskobr.ru/" target="_blank">ГБОУ Школа N 2107</a> . (Москва)</span></sub></p>'
     vopros=vopros+"{\n"+"="+ra
     vopros=vopros+"#Пример решения доступен по ссылке https://youtu.be/uETzw6WP_FM}\n"
     if utils.debug==1:print(vopros)
